@@ -8,10 +8,9 @@ import { loadTsconfigProps, lookupFile } from '../utils'
 // Required for the typedoc-plugin-markdown plugin
 declare module 'typedoc' {
   export interface TypeDocOptionMap {
-    entryDocument: string
+    entryFileName: string
     hidePageTitle: boolean
     hideBreadcrumbs: boolean
-    hideInPageTOC: boolean
   }
 }
 
@@ -53,10 +52,9 @@ export const generateTypedoc = async (
     generatorConfig = {
       ...generatorConfig,
       plugin: ['typedoc-plugin-markdown'],
-      entryDocument: ENTRY_DOCUMENT,
+      entryFileName: ENTRY_DOCUMENT,
       hidePageTitle: true,
       hideBreadcrumbs: true,
-      hideInPageTOC: true,
       githubPages: false
     }
   }

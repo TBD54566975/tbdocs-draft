@@ -78,8 +78,8 @@
     "simple-git": "^3.20.0",
     "ts-is-present": "^1.2.2",
     "tsconfck": "^2.1.2",
-    "typedoc": "^0.25.7",
-    "typedoc-plugin-markdown": "^3.16.0",
+    "typedoc": "^0.26.5",
+    "typedoc-plugin-markdown": "^4.2.4",
     "yaml": "^2.3.3"
   },
   "devDependencies": {
@@ -99,6 +99,6 @@
     "prettier": "^3.0.3",
     "prettier-eslint": "^15.0.1",
     "ts-jest": "^29.1.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.5.4"
   }
 }

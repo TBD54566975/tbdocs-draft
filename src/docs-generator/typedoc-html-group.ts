@@ -5,10 +5,9 @@ import { EntryPoint } from '../interfaces'
 // Required for the typedoc-plugin-markdown plugin
 declare module 'typedoc' {
   export interface TypeDocOptionMap {
-    entryDocument: string
+    entryFileName: string
     hidePageTitle: boolean
     hideBreadcrumbs: boolean
-    hideInPageTOC: boolean
   }
 }
 
