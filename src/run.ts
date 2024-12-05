@@ -7,11 +7,6 @@ import { generateDocs, groupDocs } from './docs-generator'
 import { getFilesDiffs } from './utils'
 import { handleGithubDocsReport, handleGithubGeneratedDocs } from './github'
 
-/**
- * The main function for the action.
- * @returns `Promise<void>` resolves when the action is complete.
- * @public
- */
 export async function run(): Promise<void> {
   try {
     const {
